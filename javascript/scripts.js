@@ -53,3 +53,12 @@ document.getElementById("boton_contactame").addEventListener("click", function()
 
     escribirTexto();
   });
+
+  //formulario
+  document.querySelector("form").addEventListener("submit", function(event) {
+    document.getElementById("nombre").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("mensaje").value = "";
+    alert("Formulario enviado!");
+    location.reload();
+  });
