@@ -1,0 +1,207 @@
+[data-theme="light"] {
+    --primary: #2a83d6;
+    --imagen: url('../imagenes/blanco_text.jpg'); 
+    --text: #000;
+    --background: #ffff;
+    --backgroundslider: lightblue;
+}
+
+[data-theme="dark"] {
+    --primary: #2a83d6;
+    --imagen: url('../imagenes/oscuro.jpg'); 
+    --text: #ffff;
+    --background: #0dcaf0;
+    --backgroundslider: #000;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+body{
+    background-image: var(--imagen);
+    background-size: 100% 100%;
+    color: var(--text);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    font-family: 'Barlow';
+}
+
+header {
+    padding-bottom: 15px;
+    height: 600px;
+    position: relative;
+}
+
+.btn {
+    border-radius: 20px;
+}
+
+h4{
+    font-family: 'Stick No Bills', sans-serif;
+    font-size: 50px;
+}
+
+.titulo_club {
+    font-size: x-large;
+    margin-bottom: 0;
+}
+
+#fila-sobre_mi, #fila-habilidades, #fila-experiencia{
+    margin-bottom: 40px;
+    margin-right: 5px;
+}
+
+h3{
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+p{
+    font-size: 20px;
+}
+
+.row{
+    margin-left: 5px;
+}
+
+#descripcion {
+    font-size: 25px;
+    font-family: 'Inconsolata';
+}
+
+.nombre_descripcion{
+    font-weight: bold;
+    top: 30%;
+}
+
+#img_perfil{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    transform: translateY(10%);
+}
+
+.img_club{
+    height: 120px;
+    width: 100px;
+}
+
+#nombre {
+    font-size: 45px;
+    font-family: Barlow;
+    margin-bottom: 0;
+}
+
+nav{
+    font-family: Barlow;
+    font-weight: bold;
+    background-color: var(--background);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--backgroundslider);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--primary);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+  
+input:checked + .slider {
+    background-color: var(--backgroundslider);
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.estadisticas_clubes {
+    float: left; width: 30%;
+}
+
+.form-control {
+    width: 500px;
+    height: 50px;
+}
+
+#mensaje {
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+h5{
+    font-size: xx-large;
+}
+
+.fa-facebook:before {
+    font-size: 70px;
+}
+
+.fa-instagram:before {
+    font-size: 70px;
+}
+
+.arcoiris {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, 
+      #ff0000, #ffa500, #00ff00, #00ff0054,
+      #00ffff, #0000ff, #800080, #ff00ff);
+    font-size: 32px;
+  }
+
+@media screen and (max-width: 767px) {
+    #img_perfil {
+      position: absolute;
+      height: 200px;
+      width: 200px;
+      top: 20%;
+      left: 30%;
+    }
+    .nombre_descripcion {
+        position: absolute;
+        margin-bottom: 0;
+        font-size: 40px;
+        top: 55%;
+        left: 20%;
+    }
+}
+  
